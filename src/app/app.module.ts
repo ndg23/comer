@@ -15,6 +15,7 @@ import { ElectronicComponent } from './products/electronic/electronic.component'
 import { SigninComponent } from './auth/signin/signin.component';
 import { RoutingModule } from './shared/routing/routing.module';
 import { SignupComponent } from './auth/signup/signup.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,12 +29,14 @@ import { SignupComponent } from './auth/signup/signup.component';
     HomeComponent,
     ElectronicComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    RoutingModule,
+    HttpModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
